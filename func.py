@@ -1,23 +1,27 @@
 import sqlite3
 
-#Connecting to sqlite
+#Getting the sqlite connection
 conn = sqlite3.connect('example.db')
 
-#Creating a cursor object using the cursor() method
+#Creating a object out of that connection.
 cursor = conn.cursor()
 
 
-#Creating table as per requirement
+#Creating the table here
 sql ='''CREATE TABLE USERNAME(
    USERNAME CHAR(100) NOT NULL,
    WEBSITE CHAR(1000)
 )'''
+#If there are two tables, drop one here. This way, the number of tables are always kept at n-1, where n = 2.
 cursor.execute("DROP TABLE IF EXISTS USERNAME")
 cursor.execute(sql)
-print("Table created successfully........")
+# Execute code if finished.
+print("Finished loading all tables.")
 
-# Commit your changes in the database
+# Commiting
 conn.commit()
+print("Now commiting")
+#Function decs.
 def putin(username, website):
     b = cursor.execute("INSERT INTO TABLE USERNAME(USERNAME, WEBSITE) VALUES(?, ?)", (username, website))
     print("Records inserted")
