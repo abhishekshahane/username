@@ -1,3 +1,7 @@
+"""
+This program is still not fully 
+operational.
+"""
 import sqlite3
 
 #Getting the sqlite connection
