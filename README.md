@@ -7,6 +7,6 @@ All you have to do is modify 'main.py' to add or display your username, like so.
 <br></br>
 <strong>func.putin(username, website)</strong>, the username and website being changed with the actual username and website. This is for adding your username and website to the database.
 <br></br>
-If you want to display a username, run the program. Enter your website as promoted, and follow the other instructions.
+If you want to display a username, run the program. Enter your website as prompted, and follow the other instructions.
 <br></br>
 <h2>Enjoy!</h2>
