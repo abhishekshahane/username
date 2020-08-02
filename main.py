@@ -7,4 +7,6 @@ This is still work in progress
 as of now, and is not fully functional.
 """
 func.putin("a", "main.com")
-func.displayout("main.com")
+func.putin("b", "a.com")
+func.displayout("a.com")
+
