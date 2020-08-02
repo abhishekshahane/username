@@ -29,6 +29,7 @@ def putin(username, website):
     conn.commit()
     print("Records inserted")
 def displayout(website):
-    cursor.execute("SELECT * FROM USERNAME WHERE WEBSITE=?", (website,))
+    cursor.execute("SELECT USERNAME FROM USERNAME WHERE WEBSITE=?", (website,))
     a = cursor.fetchone()
     print(a)
+
