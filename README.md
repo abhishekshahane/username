@@ -3,10 +3,10 @@ This is basically the username remember-er you always wanted for a website. Made
 <br></br>
 How to use:
 <br></br>
-All you have to do is modify 'main.py' to add or print your username, like so. Func is already imported, so don't worry about that.
+All you have to do is modify 'main.py' to add or display your username, like so. Func is already imported, so don't worry about that.
 <br></br>
-<strong>func.putin(username, website), the username and website being changed with the actual username and website. This is for adding your username and website to the database.</strong>
+<strong>func.putin(username, website)</strong>, the username and website being changed with the actual username and website. This is for adding your username and website to the database.
 <br></br>
-<strong>func.displayout(website), for displaying the appropriate username.</strong>
+<strong>func.displayout(website)</strong>, for displaying the appropriate username.
 <br></br>
 <h2>Enjoy!</h2>
