@@ -22,14 +22,13 @@ cursor.execute(sql)
 # Execute code if finished.
 print("Finished loading all tables.")
 
-# Commiting
-conn.commit()
 print("Now commiting")
 #Function decs.
 def putin(username, website):
-    b = cursor.execute("INSERT INTO TABLE USERNAME(USERNAME, WEBSITE) VALUES(?, ?)", (username, website))
+    b = cursor.execute("INSERT INTO USERNAME(USERNAME, WEBSITE) VALUES(?, ?)", (username, website))
+    conn.commit()
     print("Records inserted")
 def displayout(website):
-    a = cursor.execute("SELECT USERNAME FROM USERNAME WHERE WEBSITE VALUES(?)", (website))
+    cursor.execute("SELECT * FROM USERNAME WHERE WEBSITE=?", (website,))
+    a = cursor.fetchone()
     print(a)
-    
