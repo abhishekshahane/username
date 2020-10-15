@@ -1,0 +1,4 @@
+#Binaries and stuff
+*.db     binary
+*.py     text diff=python
+*.pyc    binary
