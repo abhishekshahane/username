@@ -1,6 +1,4 @@
 """
-This program is still not fully 
-operational.
 DO NOT MODIFY THE CODE
 BELOW THIS LINE.
 """
@@ -18,7 +16,7 @@ sql ='''CREATE TABLE USERNAME(
    USERNAME CHAR(100) NOT NULL,
    WEBSITE CHAR(1000)
 )'''
-#If there are two tables, drop one here. This way, the number of tables are always kept at n-1, where n = 2.
+#If there are two tables, drop one here.
 cursor.execute("DROP TABLE IF EXISTS USERNAME")
 cursor.execute(sql)
 # Execute code if finished.
