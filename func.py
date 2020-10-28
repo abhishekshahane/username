@@ -30,6 +30,8 @@ def putin(username, website):
     print("Record inserted.......")
 def displayout(website):
     cursor.execute("SELECT USERNAME FROM USERNAME WHERE WEBSITE=?", (website,))
-    a = cursor.fetchone()
-    print(a)
-
+    a = str(cursor.fetchone())
+    a=a.replace("(","")
+    a=a.replace(")","")
+    a=a.replace(",","")
+    print("The username for the website {} is: {}".format(website,a))
